@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ragini Singh - AIML Student </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    :where([class^="ri-"])::before {
+      content: "\f3c2";
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .scroll-indicator {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-10px);
+      }
+
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes rotateIn {
+      from {
+        transform: rotate(-10deg);
+        opacity: 0;
+      }
+
+      to {
+        transform: rotate(0);
+        opacity: 1;
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    .animate-slide-in {
+      animation: slideIn 0.8s ease-out forwards;
+    }
+
+    .animate-scale-in {
+      animation: scaleIn 0.8s ease-out forwards;
+    }
+
+    .animate-rotate-in {
+      animation: rotateIn 0.8s ease-out forwards;
+    }
+
+    .delay-100 {
+      animation-delay: 100ms;
+    }
+
+    .delay-200 {
+      animation-delay: 200ms;
+    }
+
+    .delay-300 {
+      animation-delay: 300ms;
+    }
+
+    .delay-400 {
+      animation-delay: 400ms;
+    }
+
+    .delay-500 {
+      animation-delay: 500ms;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0EA5E9',
+            secondary: '#64748B'
+          },
+          borderRadius: {
+            'none': '0px',
+            'sm': '4px',
+            DEFAULT: '8px',
+            'md': '12px',
+            'lg': '16px',
+            'xl': '20px',
+            '2xl': '24px',
+            '3xl': '32px',
+            'full': '9999px',
+            'button': '8px'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+  <!-- NAVBAR -->
+  <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+    <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-2xl font-['Pacifico'] text-primary">PORTFOLIO</a>
+      <div class="flex items-center space-x-8">
+        <a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
+        <a href="#projects" class="text-gray-600 hover:text-primary transition-colors">Projects</a>
+        <a href="#skills" class="text-gray-600 hover:text-primary transition-colors">Skills</a>
+        <a href="#experience" class="text-gray-600 hover:text-primary transition-colors">Experience</a>
+
+        <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="min-h-screen relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-[url('https://public.readdy.ai/ai/img_res/f3c272b2c593ba9da1857e164f5a0e89.jpg')] opacity-10">
+      </div>
+      <!-- INTRODUCTION  -->
+
+      <div class="container mx-auto px-6 pt-32 pb-20">
+        <div class="grid grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]">
+          <div class="space-y-8">
+            <h1 class="text-6xl font-bold text-gray-900 animate-slide-in">
+              Hi, I'm Ragini Singh
+              <span class="block text-primary mt-2 animate-fade-in delay-200">AIML Student </span>
+            </h1>
+            <p class="text-xl text-gray-600 leading-relaxed">
+              Blending AI, cybersecurity, and clean code to build intelligent solutions. Passionate about crafting
+              modern web applications, AI-powered tools, and secure digital experiences that make an impact.
+            </p>
+            <div class="flex items-center space-x-4">
+              <button
+                class="px-8 py-4 bg-primary text-white font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+                UCoE
+              </button>
+              <button
+                class="px-8 py-4 border border-primary text-primary font-medium !rounded-button hover:bg-primary/5 transition-colors whitespace-nowrap">
+                TE Student
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="img/myself.jpeg" alt="Ragini Singh" class="w-full h-auto rounded-3xl shadow-2xl">
+          </div>
+        </div>
+        <div class="scroll-indicator absolute bottom-8 left-1/2 -translate-x-1/2">
+          <i class="ri-arrow-down-line text-2xl text-primary"></i>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">About Me</h2>
+        <div class="grid grid-cols-2 gap-12 items-center">
+          <div class="relative">
+            <img src="img/download.jpeg" alt="Working" class="w-full h-auto rounded-2xl shadow-xl">
+          </div>
+          <div class="space-y-6">
+            <p class="text-lg text-gray-600 leading-relaxed">
+              I am a passionate AI & ML enthusiast with a strong background in building intelligent and secure digital
+              solutions. With expertise in machine learning, web development, and cybersecurity, I develop innovative
+              applications that blend technology with real-world impact.
+
+              I have worked on projects ranging from fake news detection using AI to MRI-based brain tumor
+              classification. My experience also includes building modern web applications, and leveraging data-driven
+              insights to solve complex problems.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              I also have experience in Exploratory Data Analysis (EDA) and understanding customer behavior through
+              data.
+              I am always eager to explore new technologies, contribute to impactful projects, and innovate solutions
+              that make a difference.
+
+
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">HTML</span>
+              <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">CSS</span>
+              <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">JavaScript</span>
+              <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">Python</span>
+              <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">MySQL</span>
+              <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">Figma</span>
+            </div>
+            <button
+              class="mt-4 px-6 py-3 bg-white border border-primary text-primary font-medium !rounded-button hover:bg-primary/5 transition-colors whitespace-nowrap inline-flex items-center">
+              <i class="ri-download-line mr-2"></i>
+              <a href="assets/resume.pdf" download="Ragini_Singh_Resume.pdf">Download Resume</a>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT SECTION  -->
+
+    </section>
+    <section id="projects" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">
+          Featured Projects
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="relative group rounded-lg overflow-hidden shadow-lg">
+            <!-- Project Image -->
+            <img src="img/brain.png" alt="Project 1"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+
+            <!-- GitHub Link with Hover Effect -->
+            <a href="https://github.com/ragini117/Brain-Tumor-Detection" target="_blank"
+              class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+
+              <!-- Project Title -->
+              <span class="text-white text-lg font-semibold bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                Brain Tumor Detection system
+              </span>
+
+              <!-- GitHub Icon -->
+              <i
+                class="ri-github-fill ri-4x text-gray-800 group-hover:text-blue-500 transition-colors duration-300 mt-2"></i>
+            </a>
+          </div>
+
+
+          <!-- Project 2 -->
+          <div class="relative group rounded-lg overflow-hidden shadow-lg">
+            <!-- Project Image -->
+            <img src="img/data.png" alt="Project 2"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+
+            <!-- GitHub Link with Hover Effect -->
+            <a href="https://github.com/ragini117/Customer-churn-Analysis" target="_blank"
+              class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+
+              <!-- Project Title -->
+              <span class="text-white text-lg font-semibold bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                Customer Churn Analysis
+              </span>
+
+              <!-- GitHub Icon -->
+              <i
+                class="ri-github-fill ri-4x text-gray-800 group-hover:text-red-500 transition-colors duration-300 mt-2"></i>
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <!-- Project 3 -->
+          <div class="relative group rounded-lg overflow-hidden shadow-lg">
+            <!-- Project Image -->
+            <img src="img/game.png" alt="Project 3"
+              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+
+            <!-- Overlay with Title & GitHub Icon -->
+            <a href="https://github.com/ragini117/Snake-game-" target="_blank"
+              class="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+
+              <!-- Project Title -->
+              <span class="text-white text-lg font-semibold bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                Snake Game
+              </span>
+
+              <!-- GitHub Icon -->
+              <i
+                class="ri-github-fill ri-4x text-gray-800 group-hover:text-green-500 transition-colors duration-300 mt-2"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SKILLS SECTIONS -->
+
+
+
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Skills & Expertise</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <h3 class="text-lg font-semibold">Artificial Intelligence & ML</h3>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <h3 class="text-lg font-semibold">Cybersecurity</h3>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <h3 class="text-lg font-semibold">Python</h3>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <h3 class="text-lg font-semibold">Web Development</h3>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <h3 class="text-lg font-semibold">Data Analytics</h3>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <h3 class="text-lg font-semibold">MySQL</h3>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <h3 class="text-lg font-semibold">Figma</h3>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+            <h3 class="text-lg font-semibold">Machine Learning</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience SECTION -->
+    <section id="experience" class="py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Work Experience</h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="relative pl-8 pb-12 border-l-2 border-primary flex items-center">
+            <div class="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full -translate-x-1/2"></div>
+            <div class="bg-white p-6 rounded-lg shadow-sm flex-1">
+              <h3 class="text-xl font-bold mb-2">Public Relation officer </h3>
+              <p class="text-gray-600 mb-2">UCoE E-Cell • 2024 - Present</p>
+              <p class="text-gray-700">
+                As the Public Relations Officer at my college's Entrepreneurship Cell (E-Cell), I led outreach
+                initiatives, managed collaborations, and strengthened brand visibility. I worked closely with a team to
+                foster partnerships, organize events, and implement strategic communication practices, enhancing
+                E-Cell’s impact and engagement.
+              </p>
+            </div>
+            <div class="ml-6">
+              <img src="img/pro.jpeg" alt="Work Experience Image" class="w-60  object-cover rounded-lg shadow-md">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    </div>
+    <section id="contact" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Get in Touch</h2>
+        <div class="grid grid-cols-2 gap-12">
+          <div class="space-y-8">
+            <h3 class="text-2xl font-semibold">Let's talk about your project</h3>
+            <p class="text-gray-600">
+              I'm always excited to explore new projects, innovative ideas, and collaborative opportunities. If you have
+              a vision you'd like to bring to life, let's connect and make it happen!
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-xl">
+                  <i class="ri-mail-line text-xl"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-600">Mail me at</p>
+                  <p class="text-gray-900">rraginisingh117@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-xl">
+                  <i class="ri-phone-line text-xl"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-600">Call me at</p>
+                  <p class="text-gray-900">+91 9834369215</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-xl">
+                  <i class="ri-map-pin-line text-xl"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-600">Visit me at</p>
+                  <p class="text-gray-900">Nallasopara, Palghar</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex space-x-4">
+              <!-- GitHub -->
+              <a href="https://github.com/ragini117" target="_blank"
+                class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-xl hover:bg-primary/20 transition-colors">
+                <i class="ri-github-line text-xl"></i>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/ragini117" target="_blank"
+                class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-xl hover:bg-primary/20 transition-colors">
+                <i class="ri-linkedin-line text-xl"></i>
+              </a>
+
+              <!-- Kaggle (Using Font Awesome) -->
+              <a href="https://www.kaggle.com/ragini1245" target="_blank"
+                class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-xl hover:bg-primary/20 transition-colors">
+                <i class="fab fa-kaggle text-xl"></i>
+              </a>
+              <a href="https://leetcode.com/u/Ragini12/" target="_blank"
+                class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-xl hover:bg-primary/20 transition-colors">
+                <i class="fas fa-code text-xl"></i>
+              </a>
+            </div>
+
+          </div>
+          <!-- FORM SUBMISSION -->
+
+          <form id="contactForm" class="space-y-6">
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                <input type="text" name="yourname" id="yourname"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                  placeholder="Your name" required>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                <input type="email" name="youremail" id="youremail"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                  placeholder="Your email" required>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+              <input type="text" name="subject" id="subject"
+                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                placeholder="Subject" required>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+              <textarea rows="6" name="yourMessage" id="yourMessage"
+                class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit"
+              class="w-full px-8 py-4 bg-primary text-white font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+              Send Message
+            </button>
+          </form>
+
+          <script>
+            document.getElementById("contactForm").addEventListener("submit", async function (event) {
+              event.preventDefault(); // Prevent default form submission
+
+              const name = document.getElementById("yourname").value;
+              const email = document.getElementById("youremail").value;
+              const subject = document.getElementById("subject").value;
+              const message = document.getElementById("yourMessage").value;
+
+              try {
+                const response = await fetch("http://localhost:5000/send", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ name, email, subject, message })
+                });
+
+                const result = await response.json();
+                alert(result.message); // Show success or error message
+              } catch (error) {
+                alert("Failed to send message. Please try again.");
+              }
+            });
+
+          </script>
